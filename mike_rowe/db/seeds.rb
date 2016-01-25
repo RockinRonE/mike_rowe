@@ -7,5 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 10.times do 
-	Teacher.create(name:)
+	Teacher.create(name: Faker::Name.name, email: Faker::Internet.email)
+end
+
+10.times do 
+	Student.create(name: Faker::Name.name, )
 end
