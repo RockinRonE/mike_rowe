@@ -3,9 +3,18 @@ class TeachersController < ApplicationController
     @teachers = Teacher.all
   end
 
-  def create
+  def new
 
   end
+
+  def create
+    teacher = Teacher.new(teacher_params)
+    if teacher.save
+      session[:teacher_id] = teacher.id
+      redirect_to '/'
+    else
+      redirect_to '/login'
+    end
 
   def show
     if Teacher.all.length > 0
@@ -13,10 +22,13 @@ class TeachersController < ApplicationController
     end
   end
 
-  private
+private
+  def teacher_params
+    params.require(:teacher).permit(:name, :email, :password_digest, :admin)
+  end
 
- def teacher_params
-  params.require(:teacher).permit(:avatar)
-end
+  def teacher_params
+    params.require(:teacher).permit(:avatar)
+  end
 
 end
