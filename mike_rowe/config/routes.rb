@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'sessions/new'
+
   get '/students' => 'students#index'
   # get '/students', to: 'students/show'
 
