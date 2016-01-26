@@ -2,7 +2,7 @@
 
 <%= @teacher.avatar %>
 
-<h4>Today's Group</h4>
+<h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
 <% if @date.saturday? || @date.sunday? %>
   <%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
 <%else %>
@@ -15,10 +15,11 @@
 <%counter = 1%>
 
 <% 6.times do %>
-<% if @date.saturday? || @date.sunday? %>
+<% if (@date - counter).saturday? || (@date - counter).sunday? %>
+  <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
   <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
 <%else %>
-    <h4><%= "#{counter} days ago" %></h4>
+    <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
     <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
       <%= group.student.name %>
       <br>
