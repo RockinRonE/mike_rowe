@@ -3,19 +3,27 @@
 <%= @teacher.avatar %>
 
 <h4>Today's Group</h4>
-<% @teacher.groups.where(date: @date).each do |group| %>
-  <%= group.student.name %>
-  <br>
-<%end %>
+<% if @date.saturday? || @date.sunday? %>
+  <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+<%else %>
+  <% @teacher.groups.where(date: @date).each do |group| %>
+    <%= group.student.name %>
+    <br>
+  <%end %>
+<%end%>
 
 <%counter = 1%>
 
 <% 6.times do %>
-  <h4><%= "#{counter} days ago" %></h4>
-  <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
-    <%= group.student.name %>
-    <br>
+<% if @date.saturday? || @date.sunday? %>
+  <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+<%else %>
+    <h4><%= "#{counter} days ago" %></h4>
+    <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
+      <%= group.student.name %>
+      <br>
+    <% end %>
   <% end %>
-<% end %>
+<%end%>
 
 

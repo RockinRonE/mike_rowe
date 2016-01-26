@@ -8,8 +8,10 @@ class TeachersController < ApplicationController
   end
 
   def show
+    require 'date'
     if Teacher.all.length > 0
       @teacher = Teacher.find(params[:id])
+      @date = Date.today
     end
   end
 
