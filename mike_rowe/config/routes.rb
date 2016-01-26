@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # get 'sessions/new'
   get 'login' => 'sessions#new'
   
-
+  get 'students/new' => "students#new"
   get '/students' => 'students#index'
   # get '/students', to: 'students/show'
 
