@@ -3,6 +3,7 @@ class StudentsController < ApplicationController
 
   def index
     @students = Student.all
+    @group = Group.new
   end
 
   def create
