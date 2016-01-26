@@ -18,7 +18,7 @@ class TeachersController < ApplicationController
 
   def show
     if Teacher.all.length > 0
-      @teacher = Teacher.find(params[:id])
+      @teacher = Teacher.find(params[:teacher_id])
     end
   end
 

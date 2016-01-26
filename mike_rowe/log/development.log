@@ -7993,3 +7993,2240 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/custom.css.css.map" for 127.0.0.1 at 2016-01-26 13:16:52 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-26 13:41:51 -0600
+
+PG::ConnectionBad - FATAL:  database "mike_rowe_development" does not exist
+:
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/da4a0adc384d1374/variables" for 127.0.0.1 at 2016-01-26 13:41:51 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-26 13:41:56 -0600
+
+PG::ConnectionBad - FATAL:  database "mike_rowe_development" does not exist
+:
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/76f34112de27d760/variables" for 127.0.0.1 at 2016-01-26 13:41:56 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:42:01 -0600
+
+PG::ConnectionBad - FATAL:  database "mike_rowe_development" does not exist
+:
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:383:in `connection'
+  activerecord (4.2.5) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/a21c23c023855471/variables" for 127.0.0.1 at 2016-01-26 13:42:01 -0600
+  [1m[36m (14.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (10.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTeachers (20160125220811)
+  [1m[35mSQL (48.9ms)[0m  CREATE EXTENSION IF NOT EXISTS "hstore"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (15.9ms)[0m  CREATE TABLE "teachers" ("id" serial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "admin" boolean DEFAULT 'f', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160125220811"]]
+  [1m[35m (6.3ms)[0m  COMMIT
+Migrating to CreateStudents (20160125221017)
+  [1m[36mSQL (6.1ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "hstore"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (14.8ms)[0m  [1mCREATE TABLE "students" ("id" serial primary key, "name" character varying, "gender" character varying, "age" integer, "grade" integer, "detentions" integer, "grades" hstore, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125221017"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGroups (20160125221130)
+  [1m[35mSQL (6.1ms)[0m  CREATE EXTENSION IF NOT EXISTS "hstore"
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (9.2ms)[0m  CREATE TABLE "groups" ("id" serial primary key, "teacher_id" integer, "student_id" integer, "date" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160125221130"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddAttachmentAvatarToTeachers (20160125223500)
+  [1m[36m (6.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "teachers" ADD "avatar_file_name" character varying
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "teachers" ADD "avatar_content_type" character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "teachers" ADD "avatar_file_size" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "teachers" ADD "avatar_updated_at" timestamp[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160125223500"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Migrating to AddAttachmentAvatarToStudents (20160125235801)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "students" ADD "avatar_file_name" character varying[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "students" ADD "avatar_content_type" character varying
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "students" ADD "avatar_file_size" integer[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "students" ADD "avatar_updated_at" timestamp
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20160125235801"]]
+  [1m[35m (10.8ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.9ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'groups'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (2.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'students'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'teachers'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-iktzbc.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12dvipm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12dvipm.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12dvipm.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/c764596e9275af20681761f71351dfde20160126-60640-1a6ap64'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12dvipm.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12dvipm.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12dvipm.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/c764596e9275af20681761f71351dfde20160126-60640-1hp5y9k'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-u8od77.jpg'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Zell"], ["email", "zell@gmail.com"], ["password_digest", "$2a$10$Z/JbzpKCwIi95uLmp5CCfuKxwHaELPEiBTe2rvrNGzT3PopEn2teO"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:48.584998"], ["created_at", "2016-01-26 19:42:48.800822"], ["updated_at", "2016-01-26 19:42:48.800822"]]
+  [1m[35m (5.8ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-e76wep.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tq6mb4.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tq6mb4.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tq6mb4.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/ab6f606c167f3b1bd19266de5b6bde5220160126-60640-13tt13y'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tq6mb4.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tq6mb4.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tq6mb4.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/ab6f606c167f3b1bd19266de5b6bde5220160126-60640-1rgq9p2'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1kr6pe2.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["name", "Bethany Heathcote"], ["email", "jennyfer_halvorson@jacobsonweimann.co"], ["password_digest", "$2a$10$hL849IDBt/SwRFCO/U02HugRMSCNCPX7KTBJZFCOKX7yHVhilFwc."], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:49.538875"], ["created_at", "2016-01-26 19:42:49.650026"], ["updated_at", "2016-01-26 19:42:49.650026"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-3qt42.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1af17ao.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1af17ao.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1af17ao.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/60e97e5faf9e66a2c2bb1e155e0fc59320160126-60640-1j1fgsh'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1af17ao.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1af17ao.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1af17ao.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/60e97e5faf9e66a2c2bb1e155e0fc59320160126-60640-t62123'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-hye8gz.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Anthony Brown"], ["email", "nina@roberts.org"], ["password_digest", "$2a$10$RTWHQj/pCc/GE.yhiUKr7uodb8HLfmE6dmAMIt.9M7IpiZrggzChO"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:49.945105"], ["created_at", "2016-01-26 19:42:50.060230"], ["updated_at", "2016-01-26 19:42:50.060230"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-tt02a7.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-nnz11y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-nnz11y.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-nnz11y.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/1b1e7b24fd8b374a6204d8bc6394b45120160126-60640-1akd8li'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-nnz11y.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-nnz11y.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-nnz11y.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/1b1e7b24fd8b374a6204d8bc6394b45120160126-60640-kgskda'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-158lqg3.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["name", "Mckayla Connelly"], ["email", "jonathon_breitenberg@ratke.info"], ["password_digest", "$2a$10$BlObuNsj4Ia5IL1DoWnBJOPUWti.bRIj1xKdDlSbf4PRSRNVFveFy"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:50.350463"], ["created_at", "2016-01-26 19:42:50.462872"], ["updated_at", "2016-01-26 19:42:50.462872"]]
+  [1m[36m (6.4ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sj9rgr.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-haevki.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-haevki.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-haevki.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/9de214b42b68bbd2a85e416aef87bdf420160126-60640-pgcwds'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-haevki.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-haevki.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-haevki.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/9de214b42b68bbd2a85e416aef87bdf420160126-60640-1tv2bm1'
+  [1m[35m (0.3ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1fxagli.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kiel Parker"], ["email", "rhett_white@streich.name"], ["password_digest", "$2a$10$7zwQIo4PtOVNsBLcF0NZpO9BwPTUSypnkHCkybr2NniOwL47L1NtC"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:50.739466"], ["created_at", "2016-01-26 19:42:50.851725"], ["updated_at", "2016-01-26 19:42:50.851725"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-11dc7pl.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-fxomsa.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-fxomsa.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-fxomsa.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/7403088eb08f815c7b566fe96850ce3f20160126-60640-1vyplmy'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-fxomsa.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-fxomsa.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-fxomsa.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/7403088eb08f815c7b566fe96850ce3f20160126-60640-xcdcm4'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1dmkf2k.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["name", "Corbin Hills"], ["email", "felipa@ruecker.info"], ["password_digest", "$2a$10$FlGVaqOThlPVAct30fRk2.MgiZUqySoXrmzax2WzwFnGQ5OTSb3h."], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:51.137705"], ["created_at", "2016-01-26 19:42:51.250964"], ["updated_at", "2016-01-26 19:42:51.250964"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-htblwr.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ah4s98.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ah4s98.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ah4s98.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/357d912d6e693e1c0273f15489560bbf20160126-60640-149mgf6'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ah4s98.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ah4s98.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ah4s98.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/357d912d6e693e1c0273f15489560bbf20160126-60640-15p85u4'
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18kbhj.jpg'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Estelle Zemlak III"], ["email", "sincere_bahringer@hansenkrajcik.org"], ["password_digest", "$2a$10$ABmCrCnffVyJEdVW3j4C4eb4vq3SoBDwCGXdEK6xw1Bwq1VpabGTy"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:51.537549"], ["created_at", "2016-01-26 19:42:51.646288"], ["updated_at", "2016-01-26 19:42:51.646288"]]
+  [1m[35m (5.9ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-xeo26z.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-lyeaoi.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-lyeaoi.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-lyeaoi.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/1a2edd3e78400afadf4c61f3b4acc98a20160126-60640-1dbqa34'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-lyeaoi.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-lyeaoi.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-lyeaoi.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/1a2edd3e78400afadf4c61f3b4acc98a20160126-60640-bhdyts'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-aanr4z.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["name", "Elsa Becker III"], ["email", "juvenal@gottlieb.biz"], ["password_digest", "$2a$10$obgnNHr5o6zVJI22juzK8eTuv8cHjSvn.qBP9NboCGW1H8MkK9Awu"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:51.924978"], ["created_at", "2016-01-26 19:42:52.035856"], ["updated_at", "2016-01-26 19:42:52.035856"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-8epqif.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18ro5tt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18ro5tt.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18ro5tt.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/afe6f7a496f13ab67f19cdfa371c2a6f20160126-60640-1rzk24b'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18ro5tt.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18ro5tt.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18ro5tt.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/afe6f7a496f13ab67f19cdfa371c2a6f20160126-60640-1d9lngm'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jyy8hd.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Isai Braun"], ["email", "wilma_pouros@grady.co"], ["password_digest", "$2a$10$p338nUsO89iYQrBPfxbcp.DsbnqO.QAufP2rdysmz7QXtIKug97Nq"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:52.421081"], ["created_at", "2016-01-26 19:42:52.534459"], ["updated_at", "2016-01-26 19:42:52.534459"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1b9k1ek.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1aq9dyv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1aq9dyv.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1aq9dyv.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/83d294c29f289e57781c39a9057713e920160126-60640-yfi30n'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1aq9dyv.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1aq9dyv.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1aq9dyv.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/83d294c29f289e57781c39a9057713e920160126-60640-1c6dil9'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1e65ibz.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["name", "Sadie Feeney"], ["email", "kimberly@pfannerstillnienow.info"], ["password_digest", "$2a$10$PGBpTBWixB.c8jrr6xwql.7jHfNt9.DFCMSwKhD1UJdIqtJG3YUye"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:52.815642"], ["created_at", "2016-01-26 19:42:52.938553"], ["updated_at", "2016-01-26 19:42:52.938553"]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-7ekg5y.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-wz347g.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-wz347g.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-wz347g.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/181890dcffa0edf6198e141b71cb810920160126-60640-1hc0h1p'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-wz347g.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-wz347g.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-wz347g.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/181890dcffa0edf6198e141b71cb810920160126-60640-1s7x0gi'
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-xy861a.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Okey Feest"], ["email", "judah@franecki.name"], ["password_digest", "$2a$10$YGN0DV1QC0jA3Q.H7zcMb.y78DwUKsy8uHmF7eFDozVzVBXmkwZVy"], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:53.215504"], ["created_at", "2016-01-26 19:42:53.326456"], ["updated_at", "2016-01-26 19:42:53.326456"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-mf6h78.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jxzndr.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jxzndr.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jxzndr.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/e3223010fb074d792a8df5e89162e7d220160126-60640-1u5ry6s'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jxzndr.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jxzndr.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1jxzndr.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/e3223010fb074d792a8df5e89162e7d220160126-60640-b7kseb'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18lr96q.jpg'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["name", "Mariela Marks"], ["gender", "M"], ["age", 11], ["grade", 5], ["detentions", 2], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:53.548072"], ["created_at", "2016-01-26 19:42:53.654439"], ["updated_at", "2016-01-26 19:42:53.654439"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-rg5bl0.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1rulz2b.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1rulz2b.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1rulz2b.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/2880418f02781042aaf23a21a0e0c27820160126-60640-16nr377'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1rulz2b.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1rulz2b.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1rulz2b.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/2880418f02781042aaf23a21a0e0c27820160126-60640-aix2ur'
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12cka4a.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Erin Bogan"], ["gender", "M"], ["age", 11], ["grade", 3], ["detentions", 4], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:53.872271"], ["created_at", "2016-01-26 19:42:53.980270"], ["updated_at", "2016-01-26 19:42:53.980270"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-12wcgsa.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jqajmg.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jqajmg.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jqajmg.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/0a80e8e6ed3cbb64425597f0d73108d120160126-60640-eveehc'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jqajmg.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jqajmg.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jqajmg.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/0a80e8e6ed3cbb64425597f0d73108d120160126-60640-8q2775'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-9rjjyb.jpg'
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["name", "Miss Kaitlin Mayer"], ["gender", "F"], ["age", 2], ["grade", 6], ["detentions", 0], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:54.186111"], ["created_at", "2016-01-26 19:42:54.298186"], ["updated_at", "2016-01-26 19:42:54.298186"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-18dku7z.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usq73w.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usq73w.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usq73w.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/f158b297bb5f9b7d579cd828cf05147920160126-60640-1oqqezs'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usq73w.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usq73w.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usq73w.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/f158b297bb5f9b7d579cd828cf05147920160126-60640-1osskp5'
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-19d1zy4.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Garrison Satterfield"], ["gender", "M"], ["age", 9], ["grade", 8], ["detentions", 4], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:54.518705"], ["created_at", "2016-01-26 19:42:54.633675"], ["updated_at", "2016-01-26 19:42:54.633675"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-m8gfq6.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1v0ovfz.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1v0ovfz.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1v0ovfz.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/0cdc951828496a15e35979e4176f903c20160126-60640-117b8ft'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1v0ovfz.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1v0ovfz.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1v0ovfz.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/0cdc951828496a15e35979e4176f903c20160126-60640-1roa86r'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1wzm12d.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["name", "Tyler Kuphal"], ["gender", "M"], ["age", 2], ["grade", 3], ["detentions", 4], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:54.850509"], ["created_at", "2016-01-26 19:42:54.964569"], ["updated_at", "2016-01-26 19:42:54.964569"]]
+  [1m[36m (5.7ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-ckygt3.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sfqmzs.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sfqmzs.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sfqmzs.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/218b46b9a57754cb9d9b5a9b1b24b5ab20160126-60640-oo9kt'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sfqmzs.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sfqmzs.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-sfqmzs.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/218b46b9a57754cb9d9b5a9b1b24b5ab20160126-60640-vkvzcu'
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-184flso.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Lisandro Hane"], ["gender", "M"], ["age", 2], ["grade", 7], ["detentions", 3], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:55.179119"], ["created_at", "2016-01-26 19:42:55.287369"], ["updated_at", "2016-01-26 19:42:55.287369"]]
+  [1m[35m (5.7ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1in37w7.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jsqnh9.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jsqnh9.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jsqnh9.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/63d187267fa037eaa813c768c1de177020160126-60640-4lvvwo'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jsqnh9.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jsqnh9.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-jsqnh9.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/63d187267fa037eaa813c768c1de177020160126-60640-1awat59'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-9v746q.jpg'
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["name", "Samantha O'Reilly"], ["gender", "F"], ["age", 1], ["grade", 4], ["detentions", 0], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:55.498576"], ["created_at", "2016-01-26 19:42:55.605587"], ["updated_at", "2016-01-26 19:42:55.605587"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1usbw2w.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-13upsfr.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-13upsfr.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-13upsfr.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/754bf72435ea8426a2f8f343fce74f0920160126-60640-1dv2dyr'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-13upsfr.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-13upsfr.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-13upsfr.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/754bf72435ea8426a2f8f343fce74f0920160126-60640-fnbp37'
+  [1m[35m (0.2ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1omvv3g.jpg'
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Adelbert O'Conner"], ["gender", "M"], ["age", 3], ["grade", 7], ["detentions", 2], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:55.807366"], ["created_at", "2016-01-26 19:42:55.914330"], ["updated_at", "2016-01-26 19:42:55.914330"]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1r2cw67.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1nqxr8.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1nqxr8.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1nqxr8.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/dabab5d0831e572b282a7a945016940820160126-60640-1ijv0i8'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1nqxr8.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1nqxr8.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1nqxr8.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/dabab5d0831e572b282a7a945016940820160126-60640-1dfs798'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-dfa8r7.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"  [["name", "Mr. Gregory Lynch"], ["gender", "F"], ["age", 4], ["grade", 6], ["detentions", 2], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:56.127577"], ["created_at", "2016-01-26 19:42:56.234732"], ["updated_at", "2016-01-26 19:42:56.234732"]]
+  [1m[36m (5.9ms)[0m  [1mCOMMIT[0m
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-102zcby.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1sdlrj7.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1sdlrj7.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1sdlrj7.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/2d5e647eea51b496f92f746860394db220160126-60640-1dijtko'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1sdlrj7.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1sdlrj7.jpg[0]'
+Command :: convert '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-1sdlrj7.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/2d5e647eea51b496f92f746860394db220160126-60640-1cj0brj'
+  [1m[35m (0.1ms)[0m  BEGIN
+Command :: file -b --mime '/var/folders/x1/b18dt11j6ds4mbgkztd0mq_c0000gn/T/4d3c92fe2b90ffad3b5c79cc410d9e0d20160126-60640-11u3i7l.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "gender", "age", "grade", "detentions", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["name", "Felicity Hudson"], ["gender", "F"], ["age", 9], ["grade", 8], ["detentions", 1], ["avatar_file_name", "my-own-slug.jpg"], ["avatar_content_type", "image/png"], ["avatar_file_size", 3332], ["avatar_updated_at", "2016-01-26 19:42:56.447517"], ["created_at", "2016-01-26 19:42:56.557045"], ["updated_at", "2016-01-26 19:42:56.557045"]]
+  [1m[35m (6.2ms)[0m  COMMIT
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:43:04 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/408299654e75e002/variables" for 127.0.0.1 at 2016-01-26 13:43:05 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:43:13 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/63a943c374e93e15/variables" for 127.0.0.1 at 2016-01-26 13:43:13 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-26 13:43:25 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Zell/.rvm/gems/ruby-2.1.2/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.8ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-26 13:43:29 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Zell/.rvm/gems/ruby-2.1.2/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:43:32 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/aa2d8ab0e20bb1c0/variables" for 127.0.0.1 at 2016-01-26 13:43:32 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:47:21 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:22 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:41 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:42 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:43 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:43 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:44 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:45 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:45 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:56 -0600
+
+
+Started POST "/__better_errors/42dc04d75cb3fcac/variables" for 127.0.0.1 at 2016-01-26 13:47:57 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-26 13:48:26 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Zell/.rvm/gems/ruby-2.1.2/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-26 13:48:30 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Zell/.rvm/gems/ruby-2.1.2/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:48:34 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/647490ed25918324/variables" for 127.0.0.1 at 2016-01-26 13:48:34 -0600
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-01-26 13:48:39 -0600
+Processing by SessionsController#destroy as HTML
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:48:39 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/7f53130eda6c4601/variables" for 127.0.0.1 at 2016-01-26 13:48:39 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:48:49 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1fa7576bc4fa1e4f/variables" for 127.0.0.1 at 2016-01-26 13:48:50 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:50:02 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/ec5e169e59b3f530/variables" for 127.0.0.1 at 2016-01-26 13:50:03 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:50:24 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/160f23d658c1b019/variables" for 127.0.0.1 at 2016-01-26 13:50:24 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:50:32 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+Sass::SyntaxError - Invalid CSS after "<<<<<<< HEAD": expected "{", was "}":
+  sass (3.4.21) lib/sass/scss/parser.rb:1179:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1115:in `expected'
+  sass (3.4.21) lib/sass/scss/parser.rb:1110:in `tok!'
+  sass (3.4.21) lib/sass/scss/parser.rb:654:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:674:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:655:in `block'
+  sass (3.4.21) lib/sass/scss/parser.rb:647:in `ruleset'
+  sass (3.4.21) lib/sass/scss/parser.rb:673:in `block_child'
+  sass (3.4.21) lib/sass/scss/parser.rb:666:in `block_contents'
+  sass (3.4.21) lib/sass/scss/parser.rb:123:in `stylesheet'
+  sass (3.4.21) lib/sass/scss/parser.rb:39:in `parse'
+  sass (3.4.21) lib/sass/engine.rb:403:in `_to_tree'
+  sass (3.4.21) lib/sass/engine.rb:278:in `render'
+  sass-rails (5.0.4) lib/sass/rails/template.rb:47:in `evaluate'
+  tilt (2.0.2) lib/tilt/template.rb:99:in `render'
+  sprockets (3.5.2) lib/sprockets/legacy_tilt_processor.rb:25:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.5.2) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.5.2) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.5.2) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.5.2) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.5.2) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.5.2) lib/sprockets/loader.rb:318:in `fetch_asset_from_dependency_cache'
+  sprockets (3.5.2) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.5.2) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.5.2) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.5.2) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:342:in `find_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:334:in `find_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:217:in `block in lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:230:in `block in resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:229:in `resolve_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:216:in `lookup_debug_asset'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:158:in `block in stylesheet_link_tag'
+  sprockets-rails (3.0.0) lib/sprockets/rails/helper.rb:157:in `stylesheet_link_tag'
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___3251506141883897788_70144569952340'
+  actionview (4.2.5) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.5) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.5) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Zell/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2f4bda55159c4a49/variables" for 127.0.0.1 at 2016-01-26 13:50:32 -0600
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:50:41 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1933ms (Views: 1932.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css.self-fb8fce5f71b04d4361ed67deb093f7065041c835b4763a18979b81b8e9fcb2df.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/custom.self-014428b2e6ccdf3cdcc9944e69e0006be766ab452bf45dacf9b5e4e6353b2210.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/application.self-0a7b4da0389b00186476a1b2cd4872e6a7e5e644e1b3b3f33f1707e681a9db1a.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started GET "/assets/custom.css.css.map" for 127.0.0.1 at 2016-01-26 13:50:43 -0600
+
+
+Started POST "/login" for 127.0.0.1 at 2016-01-26 13:50:56 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RDF6ZChCAWa5w75PfZACFfrAEMWgdIcxhFWGKqaw8wWrTUafBthk42bvRmKgOnzzA/dgHDn3TU7/bDgAZd3YCw==", "email"=>"zell@gmail.com", "password_digest"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[35mTeacher Load (0.8ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."email" = $1 LIMIT 1  [["email", "zell@gmail.com"]]
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 96ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-014428b2e6ccdf3cdcc9944e69e0006be766ab452bf45dacf9b5e4e6353b2210.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/custom.css.self-fb8fce5f71b04d4361ed67deb093f7065041c835b4763a18979b81b8e9fcb2df.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/application.self-0a7b4da0389b00186476a1b2cd4872e6a7e5e644e1b3b3f33f1707e681a9db1a.js?body=1" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
+
+
+Started GET "/assets/custom.css.css.map" for 127.0.0.1 at 2016-01-26 13:50:57 -0600
