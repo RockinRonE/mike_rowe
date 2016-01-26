@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
 
 
+
+  # get 'sessions/new'
+  get 'login' => 'sessions#new'
+
+  get 'students/new' => "students#new"
   get '/students' => 'students#index'
   get '/students' => 'students#show'
+  # get '/students', to: 'students/show'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
