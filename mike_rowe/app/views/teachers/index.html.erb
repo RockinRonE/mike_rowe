@@ -2,15 +2,15 @@
 
 <table class="table table-striped">
 	<tr>
-		<th>Pic</th>
+		<th></th>
 		<th>Name</th>
 		<th>Email</th>
 	</tr>
 	<% @teachers.each do |teacher| %>
 	<tr>
 		<td><%= link_to image_tag("http://placehold.it/50x50", alt: "Teacher Pic"), '#' %></td>
-		<td><%= teacher.name %></td>
-		<td><%= teacher.email %></td>
+		<td class="middle"><%= teacher.name %></td>
+		<td class="middle"><%= teacher.email %></td>
 	</tr>
 		<% end %>
 </table>
