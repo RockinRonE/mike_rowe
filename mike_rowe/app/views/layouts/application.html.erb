@@ -6,19 +6,20 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+ <header>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <ul class="nav nav-pills">
+            <li role="presentation"><%= link_to "Home",   '#' %></li>
+            <li role="presentation"><%= link_to "Help",   '#' %></li>
+            <li role="presentation"><%= link_to "Log in", 'login' %></li>
+          </ul>
+        </div>
+      </div>
+  	</nav>
+  </header>
 <body>
- <header class="navbar navbar-fixed-top navbar-inverse">
- 	<div class="container">
-		/*add logo here*/
-		<nav>
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><%= link_to "Home",   '#' %></li>
-	      <li><%= link_to "Help",   '#' %></li>
-	      <li><%= link_to "Log in", 'login' %></li>
-	    </ul>
-	  	</nav>
-  	</div>
-	</header>
 	<div class="container">
 
 <%= yield %>
