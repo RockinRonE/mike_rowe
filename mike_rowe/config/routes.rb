@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get '/signup' => 'teachers#new'
   post '/teachers' => 'teachers#create'
+  get '/teachers/:id' => 'teachers#show'
 
   get 'students/new' => "students#new"
   get '/students' => 'students#index'

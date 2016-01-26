@@ -16,6 +16,7 @@ class TeachersController < ApplicationController
       flash[:error] = 'An error occured!'
       redirect_to '/login'
     end
+  end
 
   def show
     require 'date'
