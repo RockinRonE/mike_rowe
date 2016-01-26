@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  $(".add-button").click(function(e){
+    e.preventDefault();
+    var stu_id = this.id
+    $.ajax({
+      type: "POST",
+      url: "/groups"
+
+    })
+  });
+
+
+});

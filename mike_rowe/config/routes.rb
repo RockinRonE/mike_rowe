@@ -2,12 +2,19 @@ Rails.application.routes.draw do
 
 
   # get 'sessions/new'
-  get 'login' => 'sessions#new'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'teachers#new'
+  post '/teachers' => 'teachers#create'
 
   get 'students/new' => "students#new"
   get '/students' => 'students#index'
   get '/students/:id' => 'students#show'
   # get '/students', to: 'students/show'
+
+  get '/groups/new' => "groups#create"
 
 
 

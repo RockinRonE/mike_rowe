@@ -1,0 +1,39 @@
+
+<h1 class= 'center'> Check out all these Students! </h1>
+<div class = "panel panel-default">
+  <table id="students-list" class="table table-bordered table-striped">
+    <tr class = 'active'>
+      <td></td>
+      <td></td>
+      <td class="middle">Student Name</td>
+      <td class="middle">Gender</td>
+      <td class="middle">Age</td>
+      <td class="middle">Grade</td>
+      <td class="middle">Detentions</td>
+      <td class="middle">History</td>
+      <td class="middle">Science</td>
+      <td class="middle">Math</td>
+    </tr>
+    <% @students.each do |student| %>
+      <tr>
+        <td class="middle add-button" id=<%= student.id %>>
+          <%= form_for @group, url: {action: "create", :controller=>"groups"} do |f| %>
+          <%= f.submit "Add" %>
+          <%end%>
+
+        </td>
+        <td class="middle"> <%= link_to image_tag('http://placehold.it/50x50') %>
+        <td class="middle"> <%= link_to student.name, show_path(student) %></td>
+        <td class="middle"><%= student.gender %></td>
+        <td class="middle"><%= student.age %></td>
+        <td class="middle"><%= student.grade %></td>
+        <td class="middle"><%= student.detentions%></td>
+        <td class="middle"><%= student.grades["history"] %></td>
+        <td class="middle"><%= student.grades["science"] %></td>
+        <td class="middle"><%= student.grades["math"] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
