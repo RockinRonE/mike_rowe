@@ -15,15 +15,15 @@ class Teacher < ActiveRecord::Base
     end
   end
 
-  def password
-    @secure_password_obj || BCrypt::Password.new(self.hashed_password)
-  end
+  # def password
+  #   @secure_password_obj || BCrypt::Password.new(self.hashed_password)
+  # end
 
-  def password=(plaintext_password)
-    @plaintext_password = plaintext_password
-    @secure_password_obj = BCrypt::Password.create(plaintext_password)
-    self.hashed_password = @secure_password_obj.to_s
-  end
+  # def password=(plaintext_password)
+  #   @plaintext_password = plaintext_password
+  #   @secure_password_obj = BCrypt::Password.create(plaintext_password)
+  #   self.hashed_password = @secure_password_obj.to_s
+  # end
 
   def self.authenticate(user, password)
     @user = User.find_by_username(user)
