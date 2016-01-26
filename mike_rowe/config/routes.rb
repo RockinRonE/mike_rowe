@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/students' => 'students#index'
   get '/students/:id' => 'students#show'
   # get '/students', to: 'students/show'
+  get 'teachers' => 'teachers#index'
 
   post '/groups/new' => "groups#create"
 
