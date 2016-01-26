@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160125235801) do
   enable_extension "plpgsql"
   enable_extension "hstore"
 
+
   create_table "groups", force: :cascade do |t|
     t.integer  "teacher_id"
     t.integer  "student_id"
@@ -32,6 +33,8 @@ ActiveRecord::Schema.define(version: 20160125235801) do
     t.integer  "grade"
     t.integer  "detentions"
     t.hstore   "grades"
+
+
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.string   "avatar_file_name"

@@ -1,6 +1,5 @@
 class CreateStudents < ActiveRecord::Migration
   def change
-    enable_extension "hstore"
     create_table :students do |t|
       t.string :name
       t.string :gender
@@ -8,6 +7,7 @@ class CreateStudents < ActiveRecord::Migration
       t.integer :grade
       t.integer :detentions
       t.hstore  :grades
+
 
       t.timestamps null: false
     end
