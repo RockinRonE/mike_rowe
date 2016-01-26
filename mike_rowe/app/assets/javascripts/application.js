@@ -17,10 +17,8 @@
 $(document).ready(function(){
   $(".new_group").submit(function(e){
     e.preventDefault();
-    var row = $(this).parent();
     var params = $(this).serialize();
     console.log(params);
-    console.log(row);
     $.ajax({
       type: "POST",
       url: "/groups/new",
