@@ -11,12 +11,12 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <ul class="nav nav-pills">
-            <li role="presentation"><%= link_to "Home",   '#' %></li>
-            <li role="presentation"><%= link_to "Help",   '#' %></li>
+            <li role="presentation"><%= link_to "Profile",  '/teachers/'+session[:teacher_id].to_s %></li>
+            <li role="presentation"><%= link_to "Students",  show_path %></li>
             <% if current_user %>
-              <li role="presentation"><%= link_to "Log out", 'logout' %></li>
+              <li role="presentation"><%= link_to "Log out", '/logout' %></li>
             <% else %>
-              <li role="presentation"><%= link_to "Log in", 'login' %></li>
+              <li role="presentation"><%= link_to "Log in", '/login' %></li>
             <% end %>
           </ul>
         </div>
