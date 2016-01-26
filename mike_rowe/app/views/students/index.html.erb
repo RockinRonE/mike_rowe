@@ -17,6 +17,7 @@
       <tr>
         <td class="middle add-button" value=<%= student.id %>>
           <%= form_for @group, url: {action: "create", :controller=>"groups"} do |f| %>
+            <%= hidden_field_tag :student_id, student.id, id: nil %>
           <%= f.submit "Add" %>
           <%end%>
         </td>
