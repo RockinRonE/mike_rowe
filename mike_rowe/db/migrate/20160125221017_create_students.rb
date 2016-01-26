@@ -6,7 +6,8 @@ class CreateStudents < ActiveRecord::Migration
       t.integer :age
       t.integer :grade
       t.integer :detentions
-      # t.hstore :grades
+      t.hstore  :grades
+
 
       t.timestamps null: false
     end
