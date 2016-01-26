@@ -13,6 +13,7 @@ class TeachersController < ApplicationController
       session[:teacher_id] = teacher.id
       redirect_to '/'
     else
+      flash[:error] = 'An error occured!'
       redirect_to '/login'
     end
 
@@ -24,7 +25,7 @@ class TeachersController < ApplicationController
 
 private
   def teacher_params
-    params.require(:teacher).permit(:name, :email, :password_digest, :admin)
+    params.require(:teacher).permit(:name, :email, :password, :admin)
   end
 
   def teacher_params
