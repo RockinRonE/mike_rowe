@@ -4,7 +4,7 @@ class TeachersController < ApplicationController
   end
 
   def create
-    @teacher = Teacher.create(student_params)
+
   end
 
   def show
@@ -15,7 +15,7 @@ class TeachersController < ApplicationController
 
   private
 
- def student_params
+ def teacher_params
   params.require(:teacher).permit(:avatar)
 end
 
