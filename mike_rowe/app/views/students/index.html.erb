@@ -1,5 +1,5 @@
 <table class="table table-bordered">
-    <tr>
+    <tr class = 'active'>
         <td>Student Name</td>
         <td>Gender</td>
         <td>Age</td>
@@ -9,11 +9,29 @@
         <td>Science</td>
         <td>Math</td>
     </tr>
-
-     <tr>
-        <td>Boo</td>
-        <td>Boo</td>
-        <td>Boo</td>
-        <td>Boo</td>
-    </tr>
+    <% @students.each_with_index do |student, i| %>
+        <% if i.odd? %>
+          <tr class = 'active'>
+            <td><%= student.name%></td>
+            <td><%= student.gender %></td>
+            <td><%= student.age %></td>
+            <td><%= student.grade %></td>
+            <td><%= student.detentions%></td>
+            <td><%= student.grades["history"] %></td>
+            <td><%= student.grades["science"] %></td>
+            <td><%= student.grades["math"] %></td>
+          </tr>
+        <% else %>
+          <tr>
+            <td><%= student.name%></td>
+            <td><%= student.gender %></td>
+            <td><%= student.age %></td>
+            <td><%= student.grade %></td>
+            <td><%= student.detentions%></td>
+            <td><%= student.grades["history"] %></td>
+            <td><%= student.grades["science"] %></td>
+            <td><%= student.grades["math"] %></td>
+          </tr>
+        <% end %>
+    <% end %>
 </table>
