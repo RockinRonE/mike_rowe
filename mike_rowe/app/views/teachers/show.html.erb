@@ -2,6 +2,20 @@
 
 <%= @teacher.avatar %>
 
+<h4>Today's Group</h4>
+<% @teacher.groups.where(date: @date).each do |group| %>
+  <%= group.student.name %>
+  <br>
+<%end %>
 
+<%counter = 1%>
+
+<% 6.times do %>
+  <h4><%= "#{counter} days ago" %></h4>
+  <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
+    <%= group.student.name %>
+    <br>
+  <% end %>
+<% end %>
 
 
