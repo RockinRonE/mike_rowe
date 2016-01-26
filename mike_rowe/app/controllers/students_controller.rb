@@ -5,10 +5,12 @@ class StudentsController < ApplicationController
 
   def create
   	@student = Student.create(student_params)
-  end 
+  end
 
   def show
-    @student = Student.find(params[:id])
+    if Student.all.length > 0
+      @student = Student.find(params[:id])
+    end
   end
 
   private
