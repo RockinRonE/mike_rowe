@@ -1,4 +1,5 @@
 class CreateStudents < ActiveRecord::Migration
+  enable_extension "hstore"
   def change
     create_table :students do |t|
       t.string :name

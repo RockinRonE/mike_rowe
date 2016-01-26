@@ -1,4 +1,5 @@
 class CreateGroups < ActiveRecord::Migration
+  enable_extension "hstore"
   def change
     create_table :groups do |t|
       t.references :teacher
