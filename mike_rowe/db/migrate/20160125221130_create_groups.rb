@@ -4,7 +4,7 @@ class CreateGroups < ActiveRecord::Migration
     create_table :groups do |t|
       t.references :teacher
       t.references :student
-      t.string :date
+      t.date :date
 
       t.timestamps null: false
     end

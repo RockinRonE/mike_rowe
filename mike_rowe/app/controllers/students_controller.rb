@@ -1,6 +1,9 @@
 class StudentsController < ApplicationController
+  before_filter :authorize
+
   def index
     @students = Student.all
+    @group = Group.new
   end
 
   def create
