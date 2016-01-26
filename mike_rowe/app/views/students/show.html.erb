@@ -1,0 +1,21 @@
+<%= @student.avatar %>
+
+<%= @student.name %>
+
+<h4>Gender:</h4>
+<%= @student.gender %>
+
+<h4>Age:</h4>
+<%= @student.age %>
+
+<h4>GPA:</h4>
+<%= @student.grade %>
+
+<h4>Grades:</h4>
+<% @student.grades.each do |subject, grade| %>
+  <%= puts "#{subject}: #{grade}" %>
+
+<h4> Number of disciplinary actions: </h4>
+<%= @student.detentions %>
+
+<h4>Comments:</h4>
