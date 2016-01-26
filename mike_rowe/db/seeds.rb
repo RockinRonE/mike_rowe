@@ -17,6 +17,6 @@ end
 
 50.times do
 
-  Group.create(student: rand(1..Students.all.length), teacher: rand(1..Teachers.all.length), date: Date.today - rand(0..6))
+  Group.create(student: Student.find(rand(1..Student.all.length)), teacher: Teacher.find(rand(1..Teacher.all.length)), date: Date.today - rand(0..6))
 
 end

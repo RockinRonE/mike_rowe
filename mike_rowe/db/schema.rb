@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160125235801) do
   create_table "groups", force: :cascade do |t|
     t.integer  "teacher_id"
     t.integer  "student_id"
-    t.string   "date"
+    t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
