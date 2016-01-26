@@ -16,7 +16,12 @@
     </tr>
     <% @students.each do |student| %>
       <tr>
-        <td class="middle add-button"><%= link_to image_tag('https://whatcomhospiceproam.com/wp-content/uploads/2015/04/plus.png') %></td>
+        <td class="middle add-button" id=<%= student.id %>>
+          <%= form_for @group, url: {action: "create", :controller=>"groups"} do |f| %>
+          <%= f.submit "Add" %>
+          <%end%>
+
+        </td>
         <td class="middle"> <%= link_to image_tag('http://placehold.it/50x50') %>
         <td class="middle"> <%= link_to student.name, show_path(student) %></td>
         <td class="middle"><%= student.gender %></td>
