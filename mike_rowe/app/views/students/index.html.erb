@@ -1,7 +1,8 @@
 <h1 class= 'center'> Check out all these Students! </h1>
 <div class = "panel panel-default">
-  <table class="table table-bordered table-striped">
+  <table id="students-list" class="table table-bordered table-striped">
     <tr class = 'active'>
+      <td></td>
       <td></td>
       <td class="middle">Student Name</td>
       <td class="middle">Gender</td>
@@ -14,6 +15,7 @@
     </tr>
     <% @students.each do |student| %>
       <tr>
+        <td class="middle add-button"><%= link_to image_tag('https://whatcomhospiceproam.com/wp-content/uploads/2015/04/plus.png') %></td>
         <td class="middle"> <%= link_to image_tag('http://placehold.it/50x50') %>
         <td class="middle"> <%= link_to student.name, show_path(student) %></td>
         <td class="middle"><%= student.gender %></td>
