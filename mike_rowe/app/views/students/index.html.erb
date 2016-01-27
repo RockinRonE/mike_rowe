@@ -16,7 +16,7 @@
     </tr>
     <% @students.each do |student| %>
       <tr>
-        <td class="middle add-button" value=<%= student.id %>>
+        <td class="middle add-button">
           <%= link_to image_tag("https://www.element14.com/community/themes/e14/images/pcb-green-plus-sign.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
         </td>
         <td class="middle"> <%= link_to image_tag('http://placehold.it/50x50') %>
