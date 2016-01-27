@@ -14,31 +14,47 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
+var dateWidget;
 $(document).ready(function(){
   $(".add-student-to-group-link").on("ajax:success", function(response){
-    $(this).replaceWith();
+    $(this).hide();
   });
-$(".group").hide();
+  $(".group").hide();
 
-$(".container").on("click", ".day", function(event){
-  event.preventDefault();
-  var link = $(this);
-  $(".group").toggle();
 
-})
+  $(".add-student-to-group-link").bind("ajax:before", function() {
+    var date = new Date($("#textbox1").wijinputdate("getText"));
+    this.href += "&date=" + formatDate(date);
+  })
+
+  $(function () {
+      // Set dateChanged event handler function
+      $("#textbox1").wijinputdate({
+          dateChanged : function (e, data) {
+          location.reload();
+          }
+      });
+  });
+
   $("#textbox1").wijinputdate({
-    placeHolder:'Click for Dates',
-    dateFormat: 'yyyy/M/d',
-    pickers: {
-      list: [
-        {label: '1980/4/8', value: new Date(1980, 3, 8)},
-        {label: '2007/12/25', value: new Date(2007, 11, 25)},
-        {label: 'today', value: new Date()}
-      ]
-    },
-    showTrigger: true
+      showTrigger: true
+
+    });
   });
-});
+  $(".container").on("click", ".day", function(event){
+    event.preventDefault();
+    var link = $(this);
+    $(".group").toggle();
+
+  })
+
+
+
+function formatDate(date) {
+  var year = "" + (date.getYear() + 1900);
+  var month = ("00" + (date.getMonth() + 1)).slice(-2);
+  var day = ("00" + date.getDate()).slice(-2);
+  return year + "-" + month + "-" + day;
+}
 
 // <%= link_to image_tag("https://www.virgineastcoasttrains.cab/images/minus_button.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
