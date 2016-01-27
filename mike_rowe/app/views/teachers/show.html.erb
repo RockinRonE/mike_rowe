@@ -7,25 +7,36 @@
 
 <% if @date.saturday? || @date.sunday? %>
   <%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+
 <%else %>
-  <% @teacher.groups.where(date: @date).each do |group| %>
-    <%= group.student.name %>
-    <br>
-  <%end %>
+<div class="group">
+    <% @teacher.groups.where(date: @date).each do |group| %>
+      <%= group.student.name %>
+      <br>
+    <%end %>
+  </div>
 <%end%>
 
 <%counter = 1%>
 
 <% 6.times do %>
 <% if (@date - counter).saturday? || (@date - counter).sunday? %>
-  <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
-  <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+  <div class="day">
+    <h4><%= "#{@week[(@date - counter).wday]}" %></h4></div>
+    <div class="group">
+      <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+    </div>
 <%else %>
-    <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
-    <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
-      <%= group.student.name %>
-      <br>
+    <div class="day">
+      <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
+      <div class="group">
+        <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
+        <%= group.student.name %>
+        <br>
+
     <% end %>
+    </div>
+    </div>
   <% end %>
   <%counter += 1 %>
 <%end%>

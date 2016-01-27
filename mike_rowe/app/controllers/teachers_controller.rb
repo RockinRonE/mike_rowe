@@ -12,10 +12,10 @@ class TeachersController < ApplicationController
     teacher = Teacher.new(teacher_params)
     if teacher.save
       session[:teacher_id] = teacher.id
-      redirect_to '/'
+      redirect_to '/teachers'
     else
       flash[:error] = 'An error occured!'
-      redirect_to '/login'
+      redirect_to '/teachers'
     end
   end
 

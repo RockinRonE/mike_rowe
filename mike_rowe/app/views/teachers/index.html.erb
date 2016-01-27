@@ -1,5 +1,10 @@
 <h2>All Teachers</h2>
-
+<% if @current_user.admin == true %>
+<button id="new-teacher-button" value="hide/show">Add Teacher</button>
+<div id="new-teacher" align="center" style="display: none">
+	<%= render :partial => "newTeacher" %>
+</div>
+<% end %>
 <table class="table table-striped">
 	<tr>
 		<th></th>
