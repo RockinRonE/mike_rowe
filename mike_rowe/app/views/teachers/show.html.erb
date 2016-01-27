@@ -3,7 +3,8 @@
 
 
 
-<h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
+<h4>Today's Group</h4>
+<%= @week[@date.wday] %>
 
 <% if @date.saturday? || @date.sunday? %>
   <%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
