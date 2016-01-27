@@ -2,42 +2,45 @@
 
 <%= @teacher.avatar %>
 
-<div class="day"><h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
-  <% if @date.saturday? || @date.sunday? %>
-    <div class="group"><%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+<div class="group_list">
+  <div class="day"><h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
+    <% if @date.saturday? || @date.sunday? %>
+      <div class="group"><%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+      </div>
+      </div>
+  <%else %>
+  <div class="group">
+      <% @teacher.groups.where(date: @date).each do |group| %>
+        <%= group.student.name %>
+        <br>
+      <%end %>
     </div>
-</div>
-<%else %>
-<div class="group">
-    <% @teacher.groups.where(date: @date).each do |group| %>
-      <%= group.student.name %>
-      <br>
-    <%end %>
-  </div>
-<%end%>
+  <%end%>
 
-<%counter = 1%>
+  <%counter = 1%>
 
-<% 6.times do %>
-<% if (@date - counter).saturday? || (@date - counter).sunday? %>
-  <div class="day">
-    <h4><%= "#{@week[(@date - counter).wday]}" %></h4></div>
-    <div class="group">
-      <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
-    </div>
-<%else %>
+  <% 6.times do %>
+  <% if (@date - counter).saturday? || (@date - counter).sunday? %>
     <div class="day">
       <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
       <div class="group">
-        <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
-        <%= group.student.name %>
-        <br>
+        <%= "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+      </div>
+    </div>
+  <%else %>
+      <div class="day">
+        <h4><%= "#{@week[(@date - counter).wday]}" %></h4>
+        <div class="group">
+          <% @teacher.groups.where(date: (@date - counter)).each do |group| %>
+          <%= group.student.name %>
+          <br>
 
+      <% end %>
+      </div>
+      </div>
     <% end %>
-    </div>
-    </div>
-  <% end %>
-  <%counter += 1 %>
-<%end%>
+    <%counter += 1 %>
+  <%end%>
+</div>
 
 
