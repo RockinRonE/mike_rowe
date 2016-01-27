@@ -31,10 +31,10 @@ $(document).ready(function(){
     $('#new-student').toggle('show');
   });
 
-$(".container").on("click", ".day", function(event){
+$(".container").on("click", ".day > div", function(event){
   event.preventDefault();
   var link = $(this);
-  $(".group").toggle();
+  $(".group", this).toggle();
 });
 
   $(".add-student-to-group-link").bind("ajax:before", function() {
