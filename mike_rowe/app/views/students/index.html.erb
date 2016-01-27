@@ -19,6 +19,10 @@
         <td class="middle add-button">
           <%= link_to image_tag("https://www.element14.com/community/themes/e14/images/pcb-green-plus-sign.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
         </td>
+        <td class = "middle remove-button" style='display:none'>
+          <a href="/groups/<%=student.id%>" method='delete' class="remove-student-to-group-link"><img src="https://www.virgineastcoasttrains.cab/images/minus_button.png"</img></a>
+        </td>
+
         <td class="middle"> <%= link_to image_tag('http://placehold.it/50x50') %>
         <td class="middle"> <%= link_to student.name, show_path(student) %></td>
         <td class="middle"><%= student.gender %></td>
