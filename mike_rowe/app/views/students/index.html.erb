@@ -1,5 +1,11 @@
 
 <h1 class= 'center'> Check out all these Students! </h1>
+<% if @current_user.admin == true %>
+<button id="new-student-button" value="hide/show">Add Student</button>
+<div id="new-student" align="center" style="display: none">
+  <%= render :partial => "newStudent" %>
+</div>
+<% end %>
 <div class = "panel panel-default">
   <table id="students-list" class="table table-bordered table-striped">
     <tr class = 'active'>

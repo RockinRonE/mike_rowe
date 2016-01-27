@@ -15,16 +15,14 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
-  $(".new_group").submit(function(e){
-    e.preventDefault();
-    var params = $(this).serialize();
-    console.log(params);
-    $.ajax({
-      type: "POST",
-      url: "/groups/new",
-      data: params
-    });
+
+
+  $("#new-teacher-button").on('click', function(event){
+    $('#new-teacher').toggle('show');
   });
 
+  $("#new-student-button").on('click', function(event){
+    $('#new-student').toggle('show');
+  });
 
 });
