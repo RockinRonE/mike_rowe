@@ -26,5 +26,12 @@ $(document).ready(function(){
     });
   });
 
+$(".group").hide();
 
+$(".container").on("click", ".day", function(event){
+  event.preventDefault();
+  var link = $(this);
+  $(".group").toggle();
+
+})
 });
