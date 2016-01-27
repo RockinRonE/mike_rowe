@@ -14,17 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
 $(document).ready(function(){
-  $(".new_group").submit(function(e){
-    e.preventDefault();
-    var params = $(this).serialize();
-    console.log(params);
-    $.ajax({
-      type: "POST",
-      url: "/groups/new",
-      data: params
-    });
+  $(".add-student-to-group-link").on("ajax:success", function(response){
+    $(this).replaceWith();
   });
-
-
 });
+
+<%= link_to image_tag("https://www.virgineastcoasttrains.cab/images/minus_button.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
