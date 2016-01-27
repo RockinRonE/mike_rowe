@@ -1,0 +1,21 @@
+<%= form_for :student, url: '/students' do |f| %>
+<div class="field">
+  Name: <%= f.text_field :name %>
+  </div>
+<div class="field">
+  Gender: <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+  Age: <%= f.password_field :age %>
+  </div>
+  <div class="field">
+  Grade: <%= f.password_field :grade %>
+  </div>
+  <div class="field">
+  Detentions: <%= f.password_field :detentions %>
+  </div>
+  <br>
+   <div class="actions">
+  <%= f.submit "Submit" %>
+</div>
+<% end %>
