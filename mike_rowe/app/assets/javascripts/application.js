@@ -19,6 +19,19 @@ $(document).ready(function(){
   $(".add-student-to-group-link").on("ajax:success", function(response){
     $(this).replaceWith();
   });
+
+  $("#textbox1").wijinputdate({
+    placeHolder:'Click for Dates',
+    dateFormat: 'yyyy/M/d',
+    pickers: {
+      list: [
+        {label: '1980/4/8', value: new Date(1980, 3, 8)},
+        {label: '2007/12/25', value: new Date(2007, 11, 25)},
+        {label: 'today', value: new Date()}
+      ]
+    },
+    showTrigger: true
+  });
 });
 
-<%= link_to image_tag("https://www.virgineastcoasttrains.cab/images/minus_button.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
+// <%= link_to image_tag("https://www.virgineastcoasttrains.cab/images/minus_button.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
