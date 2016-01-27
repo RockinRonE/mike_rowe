@@ -3,18 +3,20 @@
 <%= @teacher.avatar %>
 
 <div class="group_list">
-  <div class="day"><h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
-    <% if @date.saturday? || @date.sunday? %>
-      <div class="group"><%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
+
+  <% if @date.saturday? || @date.sunday? %>
+    <div class="day"><h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
+      <div class="group">
+        <%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
       </div>
-      </div>
+  </div>
   <%else %>
-  <div class="group">
-      <% @teacher.groups.where(date: @date).each do |group| %>
-        <%= group.student.name %>
-        <br>
-      <%end %>
-    </div>
+    <div class="day">
+      <h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
+          <% @teacher.groups.where(date: @date).each do |group| %>
+            <%= group.student.name %>
+            <br>
+          <%end %>
   <%end%>
 
   <%counter = 1%>
