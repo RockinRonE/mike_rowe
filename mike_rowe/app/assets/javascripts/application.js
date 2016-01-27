@@ -19,7 +19,14 @@ $(document).ready(function(){
   $(".add-student-to-group-link").on("ajax:success", function(response){
     $(this).replaceWith();
   });
+$(".group").hide();
 
+$(".container").on("click", ".day", function(event){
+  event.preventDefault();
+  var link = $(this);
+  $(".group").toggle();
+
+})
   $("#textbox1").wijinputdate({
     placeHolder:'Click for Dates',
     dateFormat: 'yyyy/M/d',
