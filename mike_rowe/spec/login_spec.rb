@@ -17,5 +17,11 @@ feature "Signing in" do
     expect(page).to have_content 'Log out'
     # expect(page.current_path).to eq '/teachers/1'
   end
+
+  scenario "Be able to visit students page" do
+    visit '/'
+    click_link 'Students'
+    expect(page).to have_content 'Check out all these Students!'
+  end
 end
 
