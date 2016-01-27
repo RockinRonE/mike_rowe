@@ -6,14 +6,26 @@
   Gender: <%= f.text_field :gender %>
   </div>
   <div class="field">
-  Age: <%= f.password_field :age %>
+  Age: <%= f.number_field :age %>
   </div>
   <div class="field">
-  Grade: <%= f.password_field :grade %>
+  Grade: <%= f.number_field :grade %>
   </div>
   <div class="field">
-  Detentions: <%= f.password_field :detentions %>
+  Detentions: <%= f.number_field :detentions %>
   </div>
+  <%= f.fields_for :grades do |g| %>
+
+    <div class="field">
+    History Grade: <%= g.text_field :history %>
+    </div>
+    <div class="field">
+    Science Grade: <%= g.text_field :science %>
+    </div>
+    <div class="field">
+    Math Grade: <%= g.text_field :math %>
+    </div>
+  <% end %>
   <br>
    <div class="actions">
   <%= f.submit "Submit" %>
