@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   get '/groups' => "groups#index"
   post '/groups' => "groups#create"
-  delete '/groups/:id' => 'groups#destroy'
+  delete '/groups/:id' => 'groups#destroy', as: :group_delete
 
 
 

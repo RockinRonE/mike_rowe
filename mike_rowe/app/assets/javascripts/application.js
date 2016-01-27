@@ -21,10 +21,9 @@ $(document).ready(function(){
     });
 
   $(".add-student-to-group-link").on("ajax:success", function(response){
-    $(this).hide();
+    $(this).parent().hide();
+    $(this).parent().next().show();
   });
-  $(".group").hide();
-
 
 
   $("#new-student-button").on('click', function(event){
@@ -42,11 +41,31 @@ $(".container").on("click", ".day > div", function(event){
     this.href += "&date=" + formatDate(date);
   })
 
+  $(".remove-student-to-group-link").on("ajax:success", function(response){
+    $(this).parent().hide();
+    $(this).parent().prev().show();
+  });
+
+  $(".remove-student-to-group-link").click(function(e) {
+    e.preventDefault();
+    var date = new Date($("#textbox1").wijinputdate("getText"));
+    var formedDate = formatDate(date);
+    var params = {date: formedDate}
+    var url = this.href;
+
+    var request = $.ajax ({
+      url: url,
+      method: 'delete',
+      data: params
+    });
+
+  })
+
   $(function () {
       // Set dateChanged event handler function
       $("#textbox1").wijinputdate({
           dateChanged : function (e, data) {
-          location.reload();
+
           }
       });
   });
@@ -57,6 +76,9 @@ $(".container").on("click", ".day > div", function(event){
 
     });
   });
+
+  $(".group").hide();
+
   $(".container").on("click", ".day", function(event){
     event.preventDefault();
     var link = $(this);
@@ -73,4 +95,4 @@ function formatDate(date) {
   return year + "-" + month + "-" + day;
 }
 
-// <%= link_to image_tag("https://www.virgineastcoasttrains.cab/images/minus_button.png"), groups_path(:student_id => student.id), remote: true, method: :post, class: "add-student-to-group-link" %>
+"<%= link_to image_tag('https://www.virgineastcoasttrains.cab/images/minus_button.png'), groups_delete_path(:student_id => student.id), remote: true, method: :post, class: 'add-student-to-group-link' %>"
