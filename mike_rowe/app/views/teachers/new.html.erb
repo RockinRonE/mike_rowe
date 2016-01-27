@@ -1,10 +1,9 @@
-<h1>Signup!</h1>
-
 <%= form_for :teacher, url: '/teachers' do |f| %>
 
   Email: <%= f.text_field :email %>
   Password: <%= f.password_field :password_digest %>
   Password Confirmation: <%= f.password_field :password_confirmation %>
+  <%= f.check_box :admin %>
   <%= f.submit "Submit" %>
 
 <% end %>
