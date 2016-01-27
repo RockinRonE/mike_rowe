@@ -1,8 +1,10 @@
-<%= "Welcome to Mike Rowe Management, #{@teacher.name}" %>
+<h2>Welcome to Mike Rowe Management</h2> 
+<h4><%=@teacher.name %>, here are your students</h4>
 
-<%= @teacher.avatar %>
+
 
 <h4><%= "Todays Group #{@week[@date.wday]}" %></h4>
+
 <% if @date.saturday? || @date.sunday? %>
   <%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
 <%else %>
