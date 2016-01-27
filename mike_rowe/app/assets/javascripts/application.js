@@ -16,10 +16,25 @@
 //= require_tree .
 var dateWidget;
 $(document).ready(function(){
+  $("#new-teacher-button").on('click', function(event){
+    $('#new-teacher').toggle('show');
+    });
+
   $(".add-student-to-group-link").on("ajax:success", function(response){
     $(this).parent().hide();
     $(this).parent().next().show();
   });
+
+
+  $("#new-student-button").on('click', function(event){
+    $('#new-student').toggle('show');
+  });
+
+$(".container").on("click", ".day > div", function(event){
+  event.preventDefault();
+  var link = $(this);
+  $(".group", this).toggle();
+});
 
   $(".add-student-to-group-link").bind("ajax:before", function() {
     var date = new Date($("#textbox1").wijinputdate("getText"));
@@ -54,6 +69,7 @@ $(document).ready(function(){
           }
       });
   });
+
 
   $("#textbox1").wijinputdate({
       showTrigger: true

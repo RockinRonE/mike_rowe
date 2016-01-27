@@ -6,8 +6,18 @@ class StudentsController < ApplicationController
     @group = Group.new
   end
 
+  def new
+
+  end
+
   def create
-  	@student = Student.create(student_params)
+    student = Student.new(student_params)
+    if student.save
+      redirect_to '/students'
+    else
+      flash[:error] = 'An error occured!'
+      redirect_to '/students'
+    end
   end
 
   def show
@@ -19,7 +29,8 @@ class StudentsController < ApplicationController
   private
 
  def student_params
-  params.require(:student).permit(:avatar)
+  p :student
+  params.require(:student).permit(:avatar, :name, :gender, :age, :grade, :detentions, :grades=>[:history,:science,:math])
 end
 
 end
