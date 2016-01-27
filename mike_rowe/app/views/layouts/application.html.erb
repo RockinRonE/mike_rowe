@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="http://cdn.wijmo.com/jquery.wijmo-pro.all.3.20153.83.min.css" rel="stylesheet" type="text/css" />
 </head>
  <header>
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
@@ -12,7 +13,8 @@
         <div class="navbar-header">
           <ul class="nav nav-pills">
             <li role="presentation"><%= link_to "Profile",  '/teachers/'+session[:teacher_id].to_s %></li>
-            <li role="presentation"><%= link_to "Students",  show_path %></li>
+            <li role="presentation"><%= link_to "Students",  '/students/' %></li>
+            <li role="presentation"><%= link_to "Teachers",  '/teachers' %></li>
             <% if current_user %>
               <li role="presentation"><%= link_to "Log out", '/logout' %></li>
             <% else %>
