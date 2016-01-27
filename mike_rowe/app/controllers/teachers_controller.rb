@@ -1,4 +1,5 @@
 class TeachersController < ApplicationController
+  before_filter :authorize
   def index
     @teachers = Teacher.all
   end
@@ -21,6 +22,7 @@ class TeachersController < ApplicationController
   def show
     require 'date'
     if Teacher.all.length > 0
+      @week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
       @teacher = Teacher.find(params[:id])
       @date = Date.today
     end

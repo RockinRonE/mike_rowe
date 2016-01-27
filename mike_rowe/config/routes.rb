@@ -10,11 +10,13 @@ Rails.application.routes.draw do
   post '/teachers' => 'teachers#create'
   get '/teachers/:id' => 'teachers#show'
 
+
   get 'students/new' => "students#new"
   get '/students' => 'students#index'
   get '/students/:id' => 'students#show', as: :show
+
   # get '/students', to: 'students/show'
-  get 'teachers' => 'teachers#index'
+  get '/teachers' => 'teachers#index'
 
   get '/groups' => "groups#index"
   post '/groups' => "groups#create"
