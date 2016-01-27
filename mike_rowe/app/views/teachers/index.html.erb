@@ -14,7 +14,7 @@
 	<% @teachers.each do |teacher| %>
 	<tr>
 		<td><%= link_to image_tag("http://placehold.it/50x50", alt: "Teacher Pic"), '#' %></td>
-		<td class="middle"><%= teacher.name %></td>
+		<td class="middle"><%= link_to "#{teacher.name}", teacher_path(teacher) %></td>
 		<td class="middle"><%= teacher.email %></td>
 	</tr>
 		<% end %>

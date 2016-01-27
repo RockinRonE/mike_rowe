@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/signup' => 'teachers#new'
   post '/teachers' => 'teachers#create'
-  get '/teachers/:id' => 'teachers#show'
+  get '/teachers/:id' => 'teachers#show', as: :teacher
 
 
   get '/students/new' => "students#new"

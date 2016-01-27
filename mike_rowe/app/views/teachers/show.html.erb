@@ -1,6 +1,6 @@
-<%= "Welcome to Mike Rowe Management, #{@teacher.name}" %>
+<h2>Welcome to Mike Rowe Management</h2> 
+<h4><%=@teacher.name %>, here are your students</h4>
 
-<%= @teacher.avatar %>
 
 <div class="group_list">
 
@@ -9,6 +9,7 @@
       <div class="group">
         <%= p "No groups on this day because WEEEEEEEEKEEEEEND!!!! WOOHOO YEAH ALRIGHT GO TIME!!!" %>
       </div>
+
   </div>
   <%else %>
     <div class="day">

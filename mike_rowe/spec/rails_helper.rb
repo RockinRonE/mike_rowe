@@ -30,6 +30,23 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
+  # config.module LoginUser
+  #   def login
+  #     background do
+  #       Teacher.create(:email => 'user@example.com', :password => 'caplin')
+  #     end
+
+  # scenario "Signing in with correct credentials" do
+  #   visit '/'
+  #     within("#login") do
+  #       fill_in 'Email', :with => 'user@example.com'
+  #       fill_in 'Password', :with => 'caplin'
+  #     end
+  #     # click_button 'Log In'
+  #   end
+  # end
+  
+  
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
