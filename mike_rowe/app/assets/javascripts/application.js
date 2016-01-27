@@ -19,26 +19,36 @@ $(document).ready(function(){
   $(".add-student-to-group-link").on("ajax:success", function(response){
     $(this).hide();
   });
+  $(".group").hide();
+
 
   $(".add-student-to-group-link").bind("ajax:before", function() {
     var date = new Date($("#textbox1").wijinputdate("getText"));
     this.href += "&date=" + formatDate(date);
   })
 
-$(function () {
-    // Set dateChanged event handler function
-    $("#textbox1").wijinputdate({
-        dateChanged : function (e, data) {
-        location.reload();
-        }
-    });
-});
-
-$("#textbox1").wijinputdate({
-    showTrigger: true
-
+  $(function () {
+      // Set dateChanged event handler function
+      $("#textbox1").wijinputdate({
+          dateChanged : function (e, data) {
+          location.reload();
+          }
+      });
   });
-});
+
+  $("#textbox1").wijinputdate({
+      showTrigger: true
+
+    });
+  });
+  $(".container").on("click", ".day", function(event){
+    event.preventDefault();
+    var link = $(this);
+    $(".group").toggle();
+
+  })
+
+
 
 function formatDate(date) {
   var year = "" + (date.getYear() + 1900);
