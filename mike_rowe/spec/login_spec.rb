@@ -2,24 +2,39 @@ require "rails_helper"
 require 'capybara/rspec'
 require 'capybara/dsl'
 
-feature "Signing in" do
-  background do
-    Teacher.create(:email => 'user@example.com', :password => 'caplin')
+
+
+feature "Logged in features" do
+  before do 
+    Teacher.delete_all
+    Teacher.create(name: "Zell", :email => 'zell@gmail.com', :password => 'zell')
   end
 
   scenario "Signing in with correct credentials" do
     visit '/'
-      within("#login") do
-        fill_in 'Email', :with => 'user@example.com'
-        fill_in 'Password', :with => 'caplin'
-      end
-  # include 'login_user'
+    within("#login") do
+      fill_in 'Email', :with => 'zell@gmail.com'
+      fill_in 'Password', :with => 'zell'
+    end
+
+      
     click_button 'Log In'
+
     expect(page).to have_content 'Log out'
+    
+ 
 
     click_link 'Students'
     expect(page).to have_content 'Check out all these Students!'
-    # expect(page.current_path).to eq '/teachers/1'
+
+    click_link 'Teachers'
+    expect(page).to have_content 'All Teachers'
+
+    
+    visit('/teachers')
+    click_link 'Zell'
+    expect(page).to have_content 'Zell, here are your students'
+    
   end
 
 end

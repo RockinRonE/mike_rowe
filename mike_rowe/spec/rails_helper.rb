@@ -30,7 +30,7 @@ RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
-  # module LoginUser
+  # config.module LoginUser
   #   def login
   #     background do
   #       Teacher.create(:email => 'user@example.com', :password => 'caplin')
@@ -42,8 +42,9 @@ RSpec.configure do |config|
   #       fill_in 'Email', :with => 'user@example.com'
   #       fill_in 'Password', :with => 'caplin'
   #     end
-  #     click_button 'Log In'
+  #     # click_button 'Log In'
   #   end
+  # end
   
   
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
